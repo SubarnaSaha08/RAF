@@ -9,7 +9,7 @@ def draw_histogram(image, plot_no, title):
     plt.title(title)
     plt.xlabel('Pixel Intensity')
     plt.ylabel('Frequency')
-    plt.xlim([0, 256])
+    plt.xlim([0, 156])
 
 def calculate_cdf(image):
     hist, bins = np.histogram(image.flatten(), 256, [0, 256])
